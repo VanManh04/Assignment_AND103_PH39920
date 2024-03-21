@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    motor -->
+<!--    tên -->
+<!--    hãng-->
+<!--    giá -->
+<!--    số lượng-->
+<!--    trạng thái-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/item"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_width="100dp"
+            android:layout_height="196dp"
+            android:layout_gravity="center"
+            android:src="@drawable/bgmotor" />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtName_ITMT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="name"
+                android:textColor="#070707"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtBrand_ITMT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Brand"
+                android:textColor="#070707"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtPrice_ITMT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Price"
+                android:textColor="#070707"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtQuantity_ITMT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="quantity"
+                android:textColor="#070707"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtstatus_ITMT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="status"
+                android:textColor="#070707"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn"
+                    android:backgroundTint="#8BC34A"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/update"/>
+                <ImageButton
+                    android:id="@+id/btnDelete"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn"
+                    android:backgroundTint="#F80101"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/delete"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

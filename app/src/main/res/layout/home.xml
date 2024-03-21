@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/Home"
+    tools:context=".Home">
+    <!--    <com.airbnb.lottie.LottieAnimationView-->
+    <!--        android:id="@+id/animationView"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="300dp"-->
+    <!--        app:lottie_autoPlay="true"-->
+    <!--        app:lottie_fileName="logout.json"-->
+    <!--        app:lottie_loop="true" />-->
+    <TextView
+        android:id="@+id/a"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="List Motor"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="50dp"
+        android:id="@+id/rcv_Motor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_addMotor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/add_24" />
+</RelativeLayout>
