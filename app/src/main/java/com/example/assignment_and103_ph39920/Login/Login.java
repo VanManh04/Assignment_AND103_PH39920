@@ -110,9 +110,6 @@ public class Login extends AppCompatActivity {
                 email = edtUsername_Login.getText().toString();
                 password = edtPassword_Login.getText().toString();
                 SignIn();
-
-                Intent intent = new Intent(Login.this, Home.class);
-                startActivity(intent);
             }
         });
 
@@ -157,6 +154,8 @@ public class Login extends AppCompatActivity {
                         //lấy thông tin tài khoản vừa mới đăng kí
                         FirebaseUser user = mAuth.getCurrentUser();
                         Toast.makeText(Login.this, "Đăng nhập thành công !", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(Login.this, Home.class);
+                        startActivity(intent);
                         finish();
                     } else {
                         Log.w(TAG, "signInWithEmail:failure", task.getException());
